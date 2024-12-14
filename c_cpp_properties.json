@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "Linux",
-            "cStandard": "c11",
+            "cStandard": "gnu11",
             "intelliSenseMode": "gcc-x64",
             "compileCommands": "${workspaceFolder}/compile_commands.json"
         }

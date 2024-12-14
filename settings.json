@@ -12,5 +12,34 @@
     },
     "files.associations": {
         "*.h": "c"
-    }
+    },
+    "git.ignoreLimitWarning": true,
+
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "clangd",
+    "clangd.arguments": [
+        "--malloc-trim",
+        "--compile-commands-dir=${workspaceFolder}",
+        "--background-index",
+        "--completion-style=detailed",
+        "--header-insertion=never",
+        "--log=error"
+    ],
+    "editor.foldingStrategy": "auto",
+    "explicitFolding.rules": {
+        "c": [
+            {
+                "beginRegex": "#if(?:n?def)?",
+                "middleRegex": "#el(?:se|if)",
+                "endRegex": "#endif"
+            }
+        ],
+        "cpp": [
+            {
+                "beginRegex": "#if(?:n?def)?",
+                "middleRegex": "#el(?:se|if)",
+                "endRegex": "#endif"
+            }
+        ]
+    },
 }
